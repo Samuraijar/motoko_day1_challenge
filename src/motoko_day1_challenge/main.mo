@@ -7,7 +7,7 @@ actor {
 
     //challenge 2
 
-    public func square(n : Nat) : asyn Nat {
+    public func square(n : Nat) : async Nat {
         return(n*n);
     };
 
@@ -19,20 +19,20 @@ actor {
 
     //challenge 4
 
-    var counter:Nat = 0
+    var counter:Nat = 0;
 
     //increment_counter
 
     public func increment_counter(n : Nat) : async Nat {
         counter := counter + n;
-        return counter;
+        return (counter);
     };
 
     //sets value of counter to 0
 
     public func clear_counter() : async() {
         counter := 0;
-        return counter;
+        return (counter);
     };
 
 
