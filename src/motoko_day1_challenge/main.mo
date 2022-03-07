@@ -1,19 +1,20 @@
 actor {
     //challenge 1
-
-    public func add(n :Nat, m : Nat) : async Nat {
-        return(n+m);
+    public func add(n : Nat, m : Nat) :async Nat {
+        return (n + m);
     };
-
+    
+    
+    
     //challenge 2
 
-    public func square(n : Nat) : async Nat {
+    public func square(n : Nat) : async Nat{
         return(n*n);
     };
 
-    //challenge 3
+    //challenge 3dfx 
 
-    public func days_to_seconds(n : Nat) : async Nat {
+    public func days_to_seconds(n : Nat) : async Nat{
         return (n*24*60*60);
     };
 
@@ -23,7 +24,7 @@ actor {
 
     //increment_counter
 
-    public func increment_counter(n : Nat) : async Nat {
+    public func increment_counter(n : Nat) : async Nat{
         counter := counter + n;
         return (counter);
     };
@@ -32,14 +33,8 @@ actor {
 
     public func clear_counter() : async() {
         counter := 0;
-        return (counter);
+        return ();
     };
 
-
-
-
-
-
-    
 
 };
