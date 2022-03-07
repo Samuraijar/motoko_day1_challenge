@@ -43,7 +43,7 @@ actor {
 
 
     public func divide(n : Nat, m : Nat) : async Bool {
-        if (n % m == 0) {
+        if (m % n == 0) {
             return (a);
         }
         else  {
