@@ -1,0 +1,35 @@
+{
+  "canisters": {
+    "motoko_day1_challenge": {
+      "main": "src/motoko_day1_challenge/main.mo",
+      "type": "motoko"
+    },
+    "motoko_day1_challenge_assets": {
+      "dependencies": [
+        "motoko_day1_challenge"
+      ],
+      "frontend": {
+        "entrypoint": "src/motoko_day1_challenge_assets/src/index.html"
+      },
+      "source": [
+        "src/motoko_day1_challenge_assets/assets",
+        "dist/motoko_day1_challenge_assets/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "dfx": "0.8.4",
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  },
+  "version": 1
+}
