@@ -21,20 +21,37 @@ actor {
     //challenge 4
 
     var counter:Nat = 0;
+    counter := 10;
 
     //increment_counter
 
     public func increment_counter(n : Nat) : async Nat{
-        counter := counter + n;
+        counter += n;
         return (counter);
     };
 
     //sets value of counter to 0
 
-    public func clear_counter() : async() {
+    public func clear_counter() : async Nat {
         counter := 0;
-        return ();
+        return (counter);
     };
 
+    //challenge 5
+    let a : Bool = true;
+    let b : Bool = false;
+
+
+    public func divide(n : Nat, m : Nat) : async Bool {
+        if (n % m == 0) {
+            return (a);
+        }
+        else  {
+            return (b);
+        };
+
+    };
+
+    
 
 };
