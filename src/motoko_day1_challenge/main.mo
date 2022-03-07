@@ -1,18 +1,18 @@
 actor {
+
     //challenge 1
+
     public func add(n : Nat, m : Nat) :async Nat {
         return (n + m);
     };
-    
-    
-    
+        
     //challenge 2
 
     public func square(n : Nat) : async Nat{
         return(n*n);
     };
 
-    //challenge 3dfx 
+    //challenge 3
 
     public func days_to_seconds(n : Nat) : async Nat{
         return (n*24*60*60);
