@@ -4,5 +4,6 @@ service : {
   days_to_seconds: (nat) -> (nat);
   divide: (nat, nat) -> (bool);
   increment_counter: (nat) -> (nat);
+  is_even: (nat) -> (bool);
   square: (nat) -> (nat);
 }
